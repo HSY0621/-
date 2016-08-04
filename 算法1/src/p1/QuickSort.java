@@ -2,8 +2,8 @@ package p1;
 
 import java.util.Scanner;
 
-public class Main1 {
-	public static int[] a;
+public class QuickSort {
+	public static int[]a;
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
@@ -28,8 +28,8 @@ public class Main1 {
 		int y=high+1;
 		int z=a[low];
 		while(true){
-			while(a[++x]<z&&x<high);
-			while(a[--y]>z);
+			while(a[++x]<a[low]&&x<high);
+			while(a[--y]>a[low]);
 			if(x>=y)break;
 			int tmp=a[y];
 			a[y]=a[x];

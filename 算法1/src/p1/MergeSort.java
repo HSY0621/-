@@ -2,13 +2,14 @@ package p1;
 
 import java.util.Scanner;
 
-public class Main {
-	public static int[]b;
+public class MergeSort {
+	public static int[] b;
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int[]a=new int[n];
+		int[] a=new int[n];
 		b=new int[n];
+		
 		for(int i=0;i<n;i++){
 			a[i]=sc.nextInt();
 		}
@@ -44,7 +45,7 @@ public class Main {
 			}
 		}
 	}
-	public static void copy(int[] a,int low,int high) {
+	public static void copy(int[]a,int low,int high) {
 		for(int i=low;i<=high;i++){
 			a[i]=b[i];
 		}
